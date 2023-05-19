@@ -19,11 +19,13 @@ class Menu:
              sys.exit()
              
     def opcion1(self,viajero):
-        return print(f"La cantidad total de millas del viajero son:{viajero.cantidadTotalMillas()} millas.")
+        return
+ 
           
     def opcion2(self,viajero,num):
-        return print(f"Millas acumuladas correctamente!\n Total de millas acumuladas: {viajero.acumularMillas(num)}")
+        new = viajero.__add__(num)
+        print("Millas acumuladas correctamente!")
     
     def opcion3(self,viajero,num):
-        return viajero.canjearMillas(num)
+        return viajero.__sub__(num)
 
